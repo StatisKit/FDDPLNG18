@@ -1,0 +1,30 @@
+
+package:
+    name: fddplng18
+    version: "1.0.0"
+
+source:
+    path: ../../..
+  
+build:
+    number: 0
+                
+about:
+    home: http://fddplng18.readthedocs.io/
+    license: Apache License 2.0
+
+requirements:
+    build:
+        - python
+        - python-statiskit
+        - networkx
+        - jupyter
+        - ipykernel
+        - matplotlib
+    run:
+        - python
+        - {{ pin_compatible('python-statiskit', exact=True) }}
+        - {{ pin_compatible('networkx', exact=True) }}
+        - jupyter
+        - ipykernel
+        - matplotlib
